@@ -1,0 +1,553 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\GIT\\BinanceDipBuyer\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj": {}
+  },
+  "projects": {
+    "C:\\GIT\\BinanceDipBuyer\\BinanceBackgroundService\\BinanceBackgroundService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\BinanceDipBuyer\\BinanceBackgroundService\\BinanceBackgroundService.csproj",
+        "projectName": "BinanceBackgroundService",
+        "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceBackgroundService\\BinanceBackgroundService.csproj",
+        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\BinanceDipBuyer\\BinanceBackgroundService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
+          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Core\\BinanceDipBuyer.Core.csproj": {
+                "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Core\\BinanceDipBuyer.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Binance.Net": {
+              "target": "Package",
+              "version": "[7.2.7, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Configuration\\BinanceDipBuyer.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Configuration\\BinanceDipBuyer.Configuration.csproj",
+        "projectName": "BinanceDipBuyer.Configuration",
+        "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Configuration\\BinanceDipBuyer.Configuration.csproj",
+        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
+          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Blazorise.Bootstrap": {
+              "target": "Package",
+              "version": "[0.9.5.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Core\\BinanceDipBuyer.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Core\\BinanceDipBuyer.Core.csproj",
+        "projectName": "BinanceDipBuyer.Core",
+        "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Core\\BinanceDipBuyer.Core.csproj",
+        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
+          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Models\\BinanceDipBuyer.Models.csproj": {
+                "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Models\\BinanceDipBuyer.Models.csproj"
+              },
+              "C:\\GIT\\BinanceDipBuyer\\Hsc.Binance.Api.Configuration\\Hsc.Binance.Api.Configuration.csproj": {
+                "projectPath": "C:\\GIT\\BinanceDipBuyer\\Hsc.Binance.Api.Configuration\\Hsc.Binance.Api.Configuration.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Models\\BinanceDipBuyer.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Models\\BinanceDipBuyer.Models.csproj",
+        "projectName": "BinanceDipBuyer.Models",
+        "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Models\\BinanceDipBuyer.Models.csproj",
+        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
+          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\Hsc.Binance.Api\\Hsc.Binance.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\Hsc.Binance.Api\\Hsc.Binance.Api.csproj",
+        "projectName": "Hsc.Binance.Api",
+        "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\Hsc.Binance.Api\\Hsc.Binance.Api.csproj",
+        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\Hsc.Binance.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
+          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\GIT\\BinanceDipBuyer\\BinanceBackgroundService\\BinanceBackgroundService.csproj": {
+                "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceBackgroundService\\BinanceBackgroundService.csproj"
+              },
+              "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Configuration\\BinanceDipBuyer.Configuration.csproj": {
+                "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Configuration\\BinanceDipBuyer.Configuration.csproj"
+              },
+              "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Core\\BinanceDipBuyer.Core.csproj": {
+                "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Core\\BinanceDipBuyer.Core.csproj"
+              },
+              "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Models\\BinanceDipBuyer.Models.csproj": {
+                "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\BinanceDipBuyer.Models\\BinanceDipBuyer.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GIT\\BinanceDipBuyer\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\BinanceDipBuyer\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj",
+        "projectName": "Hsc.Backend.Interfaces",
+        "projectPath": "C:\\GIT\\BinanceDipBuyer\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\BinanceDipBuyer\\Hsc.Backend.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
+          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\Hsc.Binance.Api\\Hsc.Binance.Api.csproj": {
+                "projectPath": "C:\\GIT\\BinanceDipBuyer\\BinanceDipBuyer\\Hsc.Binance.Api\\Hsc.Binance.Api.csproj"
+              },
+              "C:\\GIT\\BinanceDipBuyer\\Hsc.Binance.Api.Configuration\\Hsc.Binance.Api.Configuration.csproj": {
+                "projectPath": "C:\\GIT\\BinanceDipBuyer\\Hsc.Binance.Api.Configuration\\Hsc.Binance.Api.Configuration.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GIT\\BinanceDipBuyer\\Hsc.Binance.Api.Configuration\\Hsc.Binance.Api.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\BinanceDipBuyer\\Hsc.Binance.Api.Configuration\\Hsc.Binance.Api.Configuration.csproj",
+        "projectName": "Hsc.Binance.Api.Configuration",
+        "projectPath": "C:\\GIT\\BinanceDipBuyer\\Hsc.Binance.Api.Configuration\\Hsc.Binance.Api.Configuration.csproj",
+        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\BinanceDipBuyer\\Hsc.Binance.Api.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
+          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

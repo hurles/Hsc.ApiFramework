@@ -1,0 +1,12 @@
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\bin\Debug\net6.0\Hsc.Backend.Enums.deps.json
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\bin\Debug\net6.0\Hsc.Backend.Enums.dll
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\bin\Debug\net6.0\ref\Hsc.Backend.Enums.dll
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\bin\Debug\net6.0\Hsc.Backend.Enums.pdb
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\obj\Debug\net6.0\Hsc.Backend.Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\obj\Debug\net6.0\Hsc.Backend.Enums.AssemblyInfoInputs.cache
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\obj\Debug\net6.0\Hsc.Backend.Enums.AssemblyInfo.cs
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\obj\Debug\net6.0\Hsc.Backend.Enums.csproj.CoreCompileInputs.cache
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\obj\Debug\net6.0\Hsc.Backend.Enums.dll
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\obj\Debug\net6.0\ref\Hsc.Backend.Enums.dll
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\obj\Debug\net6.0\Hsc.Backend.Enums.pdb
+C:\GIT\BinanceDipBuyer\Hsc.Backend.Enums\obj\Debug\net6.0\Hsc.Backend.Enums.csproj.AssemblyReference.cache
