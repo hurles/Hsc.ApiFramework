@@ -24,12 +24,12 @@ namespace Hsc.ApiFramework.Core.Controllers
 
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly ApiConfig _configuration;
+        private readonly HscApiConfig _configuration;
 
         public AuthenticationController(
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager,
-            ApiConfig configuration)
+            HscApiConfig configuration)
         {
             _userManager = userManager;
             _roleManager = roleManager;

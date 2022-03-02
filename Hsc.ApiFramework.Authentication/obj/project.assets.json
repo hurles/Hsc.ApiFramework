@@ -1683,14 +1683,14 @@
           "bin/placeholder/Hsc.ApiFramework.Configuration.dll": {}
         }
       },
-      "Hsc.ApiFramework.Core/1.0.0": {
+      "Hsc.ApiFramework.Core/0.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Hsc.ApiFramework.Configuration": "0.0.1",
-          "Hsc.ApiFramework.Enums": "1.0.0",
-          "Hsc.ApiFramework.Interfaces": "1.0.0",
-          "Hsc.ApiFramework.Models": "1.0.0",
+          "Hsc.ApiFramework.Enums": "0.0.1",
+          "Hsc.ApiFramework.Interfaces": "0.0.1",
+          "Hsc.ApiFramework.Models": "0.0.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.2",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore": "6.0.2",
@@ -1703,7 +1703,7 @@
           "bin/placeholder/Hsc.ApiFramework.Core.dll": {}
         }
       },
-      "Hsc.ApiFramework.Enums/1.0.0": {
+      "Hsc.ApiFramework.Enums/0.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
@@ -1713,7 +1713,7 @@
           "bin/placeholder/Hsc.ApiFramework.Enums.dll": {}
         }
       },
-      "Hsc.ApiFramework.Interfaces/1.0.0": {
+      "Hsc.ApiFramework.Interfaces/0.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
@@ -1723,7 +1723,7 @@
           "bin/placeholder/Hsc.ApiFramework.Interfaces.dll": {}
         }
       },
-      "Hsc.ApiFramework.Models/1.0.0": {
+      "Hsc.ApiFramework.Models/0.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
@@ -5634,22 +5634,22 @@
       "path": "../Hsc.ApiFramework.Configuration/Hsc.ApiFramework.Configuration.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Configuration/Hsc.ApiFramework.Configuration.csproj"
     },
-    "Hsc.ApiFramework.Core/1.0.0": {
+    "Hsc.ApiFramework.Core/0.0.1": {
       "type": "project",
       "path": "../Hsc.ApiFramework.Core/Hsc.ApiFramework.Core.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Core/Hsc.ApiFramework.Core.csproj"
     },
-    "Hsc.ApiFramework.Enums/1.0.0": {
+    "Hsc.ApiFramework.Enums/0.0.1": {
       "type": "project",
       "path": "../Hsc.ApiFramework.Enums/Hsc.ApiFramework.Enums.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Enums/Hsc.ApiFramework.Enums.csproj"
     },
-    "Hsc.ApiFramework.Interfaces/1.0.0": {
+    "Hsc.ApiFramework.Interfaces/0.0.1": {
       "type": "project",
       "path": "../Hsc.ApiFramework.Interfaces/Hsc.ApiFramework.Interfaces.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Interfaces/Hsc.ApiFramework.Interfaces.csproj"
     },
-    "Hsc.ApiFramework.Models/1.0.0": {
+    "Hsc.ApiFramework.Models/0.0.1": {
       "type": "project",
       "path": "../Hsc.ApiFramework.Models/Hsc.ApiFramework.Models.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Models/Hsc.ApiFramework.Models.csproj"
@@ -5658,9 +5658,9 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Hsc.ApiFramework.Configuration >= 0.0.1",
-      "Hsc.ApiFramework.Core >= 1.0.0",
-      "Hsc.ApiFramework.Enums >= 1.0.0",
-      "Hsc.ApiFramework.Models >= 1.0.0",
+      "Hsc.ApiFramework.Core >= 0.0.1",
+      "Hsc.ApiFramework.Enums >= 0.0.1",
+      "Hsc.ApiFramework.Models >= 0.0.1",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.2",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.2",
@@ -5674,7 +5674,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.0.1",
     "restore": {
       "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Authentication\\Hsc.ApiFramework.Authentication.csproj",
       "projectName": "Hsc.ApiFramework.Authentication",

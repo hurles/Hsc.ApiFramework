@@ -15,7 +15,7 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection ConfigureHscAuthentication<T>(this IServiceCollection services, ApiConfig appConfig) where T : HscDatabaseContext
+        public static IServiceCollection ConfigureHscAuthentication<T>(this IServiceCollection services, HscApiConfig appConfig) where T : HscDatabaseContext
         {
             services.AddIdentity<IdentityUser, IdentityRole>()
             .AddEntityFrameworkStores<T>()

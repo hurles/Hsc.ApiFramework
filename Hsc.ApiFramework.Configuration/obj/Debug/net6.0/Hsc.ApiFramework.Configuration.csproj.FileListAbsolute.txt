@@ -9,3 +9,4 @@ C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\obj\Debug\net6.0\Hsc.ApiF
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\obj\Debug\net6.0\Hsc.ApiFramework.Configuration.dll
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\obj\Debug\net6.0\ref\Hsc.ApiFramework.Configuration.dll
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\obj\Debug\net6.0\Hsc.ApiFramework.Configuration.pdb
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\obj\Debug\net6.0\Hsc.ApiFramework.Configuration.csproj.AssemblyReference.cache

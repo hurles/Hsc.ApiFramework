@@ -4,7 +4,24 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>0.0.1</Version>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <SignAssembly>False</SignAssembly>
+    <Company></Company>
+    <Description>Base Configuration for Hsc.Framework</Description>
+    <PackageProjectUrl>https://github.com/hurles/Hsc.ApiFramework</PackageProjectUrl>
+    <PackageIcon>HSC Framework logo 128.png</PackageIcon>
+    <RepositoryUrl>https://github.com/hurles/Hsc.ApiFramework</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Hsc;Framework;Configuration;Api;</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Initial Pre-Release</PackageReleaseNotes>
+    <AssemblyVersion>0.0.1</AssemblyVersion>
+    <FileVersion>0.0.1</FileVersion>
+    <Authors>Hurles</Authors>
   </PropertyGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.2" />
@@ -20,6 +37,17 @@
     <ProjectReference Include="..\Hsc.ApiFramework.Core\Hsc.ApiFramework.Core.csproj" />
     <ProjectReference Include="..\Hsc.ApiFramework.Enums\Hsc.ApiFramework.Enums.csproj" />
     <ProjectReference Include="..\Hsc.ApiFramework.Models\Hsc.ApiFramework.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="HSC Framework logo 128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
