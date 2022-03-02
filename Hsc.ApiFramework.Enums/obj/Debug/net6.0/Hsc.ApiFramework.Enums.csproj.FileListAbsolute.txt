@@ -1,0 +1,12 @@
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\bin\Debug\net6.0\Hsc.ApiFramework.Enums.deps.json
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\bin\Debug\net6.0\Hsc.ApiFramework.Enums.dll
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\bin\Debug\net6.0\ref\Hsc.ApiFramework.Enums.dll
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\bin\Debug\net6.0\Hsc.ApiFramework.Enums.pdb
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.AssemblyInfoInputs.cache
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.AssemblyInfo.cs
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.csproj.CoreCompileInputs.cache
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.dll
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\ref\Hsc.ApiFramework.Enums.dll
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.pdb
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.csproj.AssemblyReference.cache

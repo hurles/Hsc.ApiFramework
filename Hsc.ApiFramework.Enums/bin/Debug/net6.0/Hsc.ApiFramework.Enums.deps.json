@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Hsc.ApiFramework.Enums/1.0.0": {
+        "runtime": {
+          "Hsc.ApiFramework.Enums.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hsc.ApiFramework.Enums/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

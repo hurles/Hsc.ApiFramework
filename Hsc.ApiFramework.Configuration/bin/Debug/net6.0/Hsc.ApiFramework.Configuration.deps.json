@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Hsc.ApiFramework.Configuration/0.0.01": {
+        "runtime": {
+          "Hsc.ApiFramework.Configuration.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hsc.ApiFramework.Configuration/0.0.01": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

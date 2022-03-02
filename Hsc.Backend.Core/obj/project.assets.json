@@ -1539,44 +1539,14 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Hsc.Backend.Configuration/0.0.1": {
+      "Hsc.ApiFramework.Configuration/0.0.1": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Hsc.Backend.Configuration.dll": {}
+          "bin/placeholder/Hsc.ApiFramework.Configuration.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Hsc.Backend.Configuration.dll": {}
-        }
-      },
-      "Hsc.Backend.Enums/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Hsc.Backend.Enums.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Hsc.Backend.Enums.dll": {}
-        }
-      },
-      "Hsc.Backend.Interfaces/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Hsc.Backend.Interfaces.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Hsc.Backend.Interfaces.dll": {}
-        }
-      },
-      "Hsc.Backend.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Hsc.Backend.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Hsc.Backend.Models.dll": {}
+          "bin/placeholder/Hsc.ApiFramework.Configuration.dll": {}
         }
       }
     }
@@ -5316,33 +5286,18 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Hsc.Backend.Configuration/0.0.1": {
+    "Hsc.ApiFramework.Configuration/0.0.1": {
       "type": "project",
-      "path": "../Hsc.Backend.Configuration/Hsc.Backend.Configuration.csproj",
-      "msbuildProject": "../Hsc.Backend.Configuration/Hsc.Backend.Configuration.csproj"
-    },
-    "Hsc.Backend.Enums/1.0.0": {
-      "type": "project",
-      "path": "../Hsc.Backend.Enums/Hsc.Backend.Enums.csproj",
-      "msbuildProject": "../Hsc.Backend.Enums/Hsc.Backend.Enums.csproj"
-    },
-    "Hsc.Backend.Interfaces/1.0.0": {
-      "type": "project",
-      "path": "../Hsc.Backend.Interfaces/Hsc.Backend.Interfaces.csproj",
-      "msbuildProject": "../Hsc.Backend.Interfaces/Hsc.Backend.Interfaces.csproj"
-    },
-    "Hsc.Backend.Models/1.0.0": {
-      "type": "project",
-      "path": "../Hsc.Backend.Models/Hsc.Backend.Models.csproj",
-      "msbuildProject": "../Hsc.Backend.Models/Hsc.Backend.Models.csproj"
+      "path": "../Hsc.ApiFramework.Configuration/Hsc.ApiFramework.Configuration.csproj",
+      "msbuildProject": "../Hsc.ApiFramework.Configuration/Hsc.ApiFramework.Configuration.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Hsc.Backend.Configuration >= 0.0.1",
-      "Hsc.Backend.Enums >= 1.0.0",
-      "Hsc.Backend.Interfaces >= 1.0.0",
-      "Hsc.Backend.Models >= 1.0.0",
+      "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFrameworkApiFramework.Enums.csproj",
+      "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFrameworkApiFramework.Interfaces.csproj",
+      "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFrameworkApiFramework.Models.csproj",
+      "Hsc.ApiFramework.Configuration >= 0.0.1",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.2",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
       "Microsoft.EntityFrameworkCore >= 6.0.2",
@@ -5384,17 +5339,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Configuration\\Hsc.Backend.Configuration.csproj": {
-              "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Configuration\\Hsc.Backend.Configuration.csproj"
+            "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj": {
+              "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj"
             },
-            "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Enums\\Hsc.Backend.Enums.csproj": {
-              "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Enums\\Hsc.Backend.Enums.csproj"
+            "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFrameworkApiFramework.Enums.csproj": {
+              "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFrameworkApiFramework.Enums.csproj"
             },
-            "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj": {
-              "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj"
+            "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFrameworkApiFramework.Interfaces.csproj": {
+              "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFrameworkApiFramework.Interfaces.csproj"
             },
-            "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Models\\Hsc.Backend.Models.csproj": {
-              "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Models\\Hsc.Backend.Models.csproj"
+            "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFrameworkApiFramework.Models.csproj": {
+              "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFrameworkApiFramework.Models.csproj"
             }
           }
         }
@@ -5444,5 +5399,34 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFrameworkApiFramework.Enums.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFrameworkApiFramework.Enums.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFrameworkApiFramework.Interfaces.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFrameworkApiFramework.Interfaces.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFrameworkApiFramework.Models.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFrameworkApiFramework.Models.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a7bcba4e-f1bc-4463-96c7-2637538490b0": {
+      "ProjectGuid": "a7bcba4e-f1bc-4463-96c7-2637538490b0",
+      "DisplayName": "Hsc.ApiFramework",
+      "ColorIndex": 0
+    },
+    "e723efde-d998-4753-820c-0f643dd26362": {
+      "ProjectGuid": "e723efde-d998-4753-820c-0f643dd26362",
+      "DisplayName": "Hsc.Backend.Interfaces",
+      "ColorIndex": 1
+    },
+    "7629d343-04bf-4cf7-a7df-003317901976": {
+      "ProjectGuid": "7629d343-04bf-4cf7-a7df-003317901976",
+      "DisplayName": "Hsc.Backend.Models",
+      "ColorIndex": 2
+    },
+    "3bb63858-9619-4e77-88bf-3d69bf149a11": {
+      "ProjectGuid": "3bb63858-9619-4e77-88bf-3d69bf149a11",
+      "DisplayName": "Hsc.Backend.Configuration",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

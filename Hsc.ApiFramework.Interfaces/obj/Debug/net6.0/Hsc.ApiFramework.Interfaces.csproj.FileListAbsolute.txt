@@ -1,0 +1,12 @@
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\bin\Debug\net6.0\Hsc.ApiFramework.Interfaces.deps.json
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\bin\Debug\net6.0\Hsc.ApiFramework.Interfaces.dll
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\bin\Debug\net6.0\ref\Hsc.ApiFramework.Interfaces.dll
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\bin\Debug\net6.0\Hsc.ApiFramework.Interfaces.pdb
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\Hsc.ApiFramework.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\Hsc.ApiFramework.Interfaces.AssemblyInfoInputs.cache
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\Hsc.ApiFramework.Interfaces.AssemblyInfo.cs
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\Hsc.ApiFramework.Interfaces.csproj.CoreCompileInputs.cache
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\Hsc.ApiFramework.Interfaces.dll
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\ref\Hsc.ApiFramework.Interfaces.dll
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\Hsc.ApiFramework.Interfaces.pdb
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\Hsc.ApiFramework.Interfaces.csproj.AssemblyReference.cache

@@ -4,14 +4,14 @@
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Core\\Hsc.Backend.Core.csproj": {}
   },
   "projects": {
-    "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Configuration\\Hsc.Backend.Configuration.csproj": {
+    "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj": {
       "version": "0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Configuration\\Hsc.Backend.Configuration.csproj",
-        "projectName": "Hsc.Backend.Configuration",
-        "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Configuration\\Hsc.Backend.Configuration.csproj",
+        "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj",
+        "projectName": "Hsc.ApiFramework.Configuration",
+        "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj",
         "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Configuration\\obj\\",
+        "outputPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -96,17 +96,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Configuration\\Hsc.Backend.Configuration.csproj": {
-                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Configuration\\Hsc.Backend.Configuration.csproj"
+              "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj": {
+                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj"
               },
-              "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Enums\\Hsc.Backend.Enums.csproj": {
-                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Enums\\Hsc.Backend.Enums.csproj"
+              "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFrameworkApiFramework.Enums.csproj": {
+                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFrameworkApiFramework.Enums.csproj"
               },
-              "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj": {
-                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj"
+              "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFrameworkApiFramework.Interfaces.csproj": {
+                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFrameworkApiFramework.Interfaces.csproj"
               },
-              "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Models\\Hsc.Backend.Models.csproj": {
-                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Models\\Hsc.Backend.Models.csproj"
+              "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFrameworkApiFramework.Models.csproj": {
+                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFrameworkApiFramework.Models.csproj"
               }
             }
           }
@@ -138,189 +138,6 @@
               "version": "[6.0.2, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Enums\\Hsc.Backend.Enums.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Enums\\Hsc.Backend.Enums.csproj",
-        "projectName": "Hsc.Backend.Enums",
-        "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Enums\\Hsc.Backend.Enums.csproj",
-        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Enums\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
-          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.org/api/v2/": {},
-          "https://www.nuget.org/api/v2/": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj",
-        "projectName": "Hsc.Backend.Interfaces",
-        "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Interfaces\\Hsc.Backend.Interfaces.csproj",
-        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Interfaces\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
-          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.org/api/v2/": {},
-          "https://www.nuget.org/api/v2/": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Models\\Hsc.Backend.Models.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Models\\Hsc.Backend.Models.csproj",
-        "projectName": "Hsc.Backend.Models",
-        "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Models\\Hsc.Backend.Models.csproj",
-        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Backend.Models\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
-          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.org/api/v2/": {},
-          "https://www.nuget.org/api/v2/": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
