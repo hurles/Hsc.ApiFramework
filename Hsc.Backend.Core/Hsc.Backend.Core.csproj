@@ -7,10 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Hsc.Backend.Configuration\Hsc.Backend.Configuration.csproj" />
     <ProjectReference Include="..\Hsc.Backend.Enums\Hsc.Backend.Enums.csproj" />
     <ProjectReference Include="..\Hsc.Backend.Interfaces\Hsc.Backend.Interfaces.csproj" />
     <ProjectReference Include="..\Hsc.Backend.Models\Hsc.Backend.Models.csproj" />
-    <ProjectReference Include="..\Hsc.Binance.Api.Configuration\Hsc.Backend.Configuration.csproj" />
   </ItemGroup>
 
   <ItemGroup>

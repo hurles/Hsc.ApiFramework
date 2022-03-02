@@ -4,6 +4,25 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>0.0.01</Version>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <SignAssembly>False</SignAssembly>
+    <Company>Joost Meulenkamp</Company>
+    <Description>Base Configuration for Hsc.Framework</Description>
+    <PackageProjectUrl>https://github.com/hurles/Hsc.ApiFramework</PackageProjectUrl>
+    <PackageIcon>HSC Framework logo 128.png</PackageIcon>
+    <RepositoryUrl>https://github.com/hurles/Hsc.ApiFramework</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Hsc;Framework;Configuration;Api;</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="D:\HSC\HSC Framework logo 128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="https:\github.com\hurles\Hsc.ApiFramework\blob\4abc19136793e1b28682033c222378c55e9f6221\README.md" />
+  </ItemGroup>
 
 </Project>
