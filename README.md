@@ -23,7 +23,7 @@ If you have no database set up yet, you may also add one of the following Data S
 
 ## 2 - Environment variables
 
-Hsc.ApiFramework is dependant on several Environment variables which need to be added. This can be done through Docker compose (see sample project), or by going through 
+Hsc.ApiFramework is dependant on several Environment variables which need to be added. This can be done through Docker compose (see sample project), or by going to your project's settings in Visual Studio (or any other IDE)
 
 | Name                     | Description    | Notes |
 | -------------------------| :--------------- | --- |
