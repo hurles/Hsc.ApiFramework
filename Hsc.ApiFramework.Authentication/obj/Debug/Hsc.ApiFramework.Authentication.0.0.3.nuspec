@@ -12,16 +12,16 @@
     <description>Base Configuration for Hsc.Framework</description>
     <releaseNotes>Initial Pre-Release</releaseNotes>
     <tags>Hsc Framework Configuration Api</tags>
-    <repository type="git" url="https://github.com/hurles/Hsc.ApiFramework" />
+    <repository type="git" url="https://github.com/hurles/Hsc.ApiFramework.git" />
     <dependencies>
       <group targetFramework="net6.0">
         <dependency id="Hsc.ApiFramework.Configuration" version="0.0.3" exclude="Build,Analyzers" />
         <dependency id="Hsc.ApiFramework.Core" version="0.0.3" exclude="Build,Analyzers" />
         <dependency id="Hsc.ApiFramework.Enums" version="0.0.3" exclude="Build,Analyzers" />
         <dependency id="Hsc.ApiFramework.Models" version="0.0.3" exclude="Build,Analyzers" />
-        <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="6.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="6.0.3" exclude="Build,Analyzers" />
         <dependency id="Microsoft.AspNetCore.Identity" version="2.2.0" exclude="Build,Analyzers" />
-        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="6.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="6.0.3" exclude="Build,Analyzers" />
         <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.2.5" exclude="Build,Analyzers" />
         <dependency id="Microsoft.IdentityModel.Tokens" version="6.16.0" exclude="Build,Analyzers" />
         <dependency id="System.IdentityModel.Tokens.Jwt" version="6.16.0" exclude="Build,Analyzers" />

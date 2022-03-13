@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj": {
-      "version": "0.0.3",
+      "version": "0.0.4",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj",
         "projectName": "Hsc.ApiFramework.Configuration",
@@ -80,7 +80,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj": {
-      "version": "0.0.3",
+      "version": "0.0.4",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj",
         "projectName": "Hsc.ApiFramework.Enums",
@@ -141,7 +141,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFramework.Interfaces.csproj": {
-      "version": "0.0.3",
+      "version": "0.0.4",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFramework.Interfaces.csproj",
         "projectName": "Hsc.ApiFramework.Interfaces",

@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj": {
-      "version": "0.0.3",
+      "version": "0.0.4",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj",
         "projectName": "Hsc.ApiFramework.Configuration",
@@ -80,7 +80,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Core\\Hsc.ApiFramework.Core.csproj": {
-      "version": "0.0.3",
+      "version": "0.0.4",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Core\\Hsc.ApiFramework.Core.csproj",
         "projectName": "Hsc.ApiFramework.Core",
@@ -172,7 +172,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj": {
-      "version": "0.0.3",
+      "version": "0.0.4",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj",
         "projectName": "Hsc.ApiFramework.Enums",
@@ -233,7 +233,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFramework.Interfaces.csproj": {
-      "version": "0.0.3",
+      "version": "0.0.4",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFramework.Interfaces.csproj",
         "projectName": "Hsc.ApiFramework.Interfaces",
@@ -298,7 +298,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFramework.Models.csproj": {
-      "version": "0.0.3",
+      "version": "0.0.4",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFramework.Models.csproj",
         "projectName": "Hsc.ApiFramework.Models",
@@ -359,7 +359,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.Database.SqlServer\\Hsc.ApiFramework.Database.SqlServer.csproj": {
-      "version": "0.0.3",
+      "version": "0.0.4",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.Database.SqlServer\\Hsc.ApiFramework.Database.SqlServer.csproj",
         "projectName": "Hsc.ApiFramework.Database.SqlServer",

@@ -12,7 +12,7 @@
     <description>Base Configuration for Hsc.Framework</description>
     <releaseNotes>Initial Pre-Release</releaseNotes>
     <tags>Hsc Framework Configuration Api</tags>
-    <repository type="git" url="https://github.com/hurles/Hsc.ApiFramework" />
+    <repository type="git" url="https://github.com/hurles/Hsc.ApiFramework.git" />
     <dependencies>
       <group targetFramework="net6.0">
         <dependency id="Hsc.ApiFramework.Interfaces" version="0.0.3" exclude="Build,Analyzers" />

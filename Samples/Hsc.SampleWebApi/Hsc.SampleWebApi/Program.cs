@@ -1,4 +1,6 @@
 using Hsc.ApiFramework.Authentication.DependencyInjection;
+using Hsc.ApiFramework.Core.Database;
+using Hsc.ApiFramework.Database.SqlServer.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.ConfigureHscAuthentication();
+builder.Services.AddHscDatabase<HscDatabaseContext>();
+builder.Services.ConfigureHscAuthentication<HscDatabaseContext>();
 
 var app = builder.Build();
 

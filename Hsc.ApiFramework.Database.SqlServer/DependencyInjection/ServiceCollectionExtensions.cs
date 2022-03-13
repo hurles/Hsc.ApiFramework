@@ -24,17 +24,11 @@ namespace Hsc.ApiFramework.Database.SqlServer.DependencyInjection
         {
             var connectionString = Environment.GetEnvironmentVariable(HscEnvironmentConfigurationService.GetSettingText(HscSetting.HSC_DATABASE_CONNECTION));
 
-            if (connectionString != null)
+            services.AddDbContext<TDbContext>(options =>
             {
-                services.AddDbContext<TDbContext>(options =>
-                {
-                    options.UseSqlServer(connectionString);
-                });
-            }
-            else
-            {
-                throw new Exception("HSC: Could not find connection string for SQL Server. Make sure the environment variable 'HSC_DATABASE_CONNECTION' is set");
-            }
+                options.UseSqlServer(connectionString);
+            });
+
             return services;
         }
 
@@ -51,17 +45,11 @@ namespace Hsc.ApiFramework.Database.SqlServer.DependencyInjection
         {
             var connectionString = Environment.GetEnvironmentVariable(HscEnvironmentConfigurationService.GetSettingText(HscSetting.HSC_DATABASE_CONNECTION));
 
-            if (connectionString != null)
+            services.AddDbContext<HscDatabaseContext>(options =>
             {
-                services.AddDbContext<HscDatabaseContext>(options =>
-                {
-                    options.UseSqlServer(connectionString);
-                });
-            }
-            else
-            {
-                throw new Exception("HSC: Could not find connection string for SQL Server. Make sure the environment variable 'HSC_DATABASE_CONNECTION' is set");
-            }
+                options.UseSqlServer(connectionString);
+            });
+
             return services;
         }
     }

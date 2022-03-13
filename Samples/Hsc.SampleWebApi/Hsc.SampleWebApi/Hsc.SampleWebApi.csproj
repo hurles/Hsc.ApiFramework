@@ -10,9 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Hsc.ApiFramework.Authentication" Version="0.0.2" />
+    <PackageReference Include="Hsc.ApiFramework.Authentication" Version="0.0.4" />
+    <PackageReference Include="Hsc.ApiFramework.Database.SqlServer" Version="0.0.4" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
   </ItemGroup>
 
 </Project>

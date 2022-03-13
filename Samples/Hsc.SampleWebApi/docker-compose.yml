@@ -7,13 +7,13 @@ services:
           context: .
           dockerfile: Hsc.SampleWebApi/Dockerfile
         ports:
-          - "5003:443"
-          - "5002:80"
+          - "5443:443"
+          - "5080:80"
         environment:
             #change this to the actual URL in production environments
-            HSC_JWT_AUDIENCE: "https://localhost:5003"
+            HSC_JWT_AUDIENCE: "https://localhost:5443"
             #change this to the actual URL  in production environments
-            HSC_JWT_ISSUER:  "https://localhost:5003"
+            HSC_JWT_ISSUER:  "https://localhost:5443"
             #for example purposes only - change this to a different secret
             HSC_JWT_SECRET: "qxBCtzLpUZRaBppKLQrnopqco88KNYEyVxF6F1W9"
             #for example purposes only - don't use sa user or this default password in a production environment'
@@ -21,12 +21,15 @@ services:
 
         depends_on:
           - db01
+    #Sample Microsoft SQL database for example purposes only - don't use sa user or this default password in a production environment'
     db01:
         image: mcr.microsoft.com/mssql/server
         container_name: Hsc.SampleWebApi.Database
         volumes:
-          - mssqldata:/var/opt/mssql
+          - hscsampledb:/var/opt/mssql
         environment:
             SA_PASSWORD: "FzyNPObxGgBT69DlD4ncHJtovNIMG2"
             ACCEPT_EULA: "Y"
             MSSQL_PID: "Express"
+volumes:
+  hscsampledb:

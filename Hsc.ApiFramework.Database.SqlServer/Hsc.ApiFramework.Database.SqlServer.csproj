@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <SignAssembly>False</SignAssembly>
     <Company></Company>
@@ -17,8 +17,8 @@
     <PackageTags>Hsc;Framework;Configuration;Api;</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>Initial Pre-Release</PackageReleaseNotes>
-    <AssemblyVersion>0.0.3</AssemblyVersion>
-    <FileVersion>0.0.3</FileVersion>
+    <AssemblyVersion>0.0.4</AssemblyVersion>
+    <FileVersion>0.0.4</FileVersion>
     <Authors>Hurles</Authors>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
@@ -32,6 +32,17 @@
   <ItemGroup>
     <ProjectReference Include="..\Hsc.ApiFramework.Configuration\Hsc.ApiFramework.Configuration.csproj" />
     <ProjectReference Include="..\Hsc.ApiFramework.Core\Hsc.ApiFramework.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="HSC Framework logo 128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

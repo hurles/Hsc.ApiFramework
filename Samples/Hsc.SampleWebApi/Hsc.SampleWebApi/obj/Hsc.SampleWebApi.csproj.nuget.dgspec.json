@@ -49,7 +49,11 @@
           "dependencies": {
             "Hsc.ApiFramework.Authentication": {
               "target": "Package",
-              "version": "[0.0.3, )"
+              "version": "[0.0.4, )"
+            },
+            "Hsc.ApiFramework.Database.SqlServer": {
+              "target": "Package",
+              "version": "[0.0.4, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -57,7 +61,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.3.0, )"
             }
           },
           "imports": [

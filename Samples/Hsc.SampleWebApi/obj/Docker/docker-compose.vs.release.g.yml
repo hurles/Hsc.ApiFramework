@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   hsc.samplewebapi:
-    container_name: Hsc.SampleWebApi_1
+    container_name: Hsc.SampleWebApi
     build:
       labels:
         com.microsoft.created-by: "visual-studio"

@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hsc.ApiFramework.Interfaces
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hsc.ApiFramework.Models", "..\Hsc.ApiFramework.Models\Hsc.ApiFramework.Models.csproj", "{2EA53146-5C86-4A14-A6C9-8BF848F05C83}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hsc.ApiFramework.Database.SqlServer", "..\Hsc.Database.SqlServer\Hsc.ApiFramework.Database.SqlServer.csproj", "{9323DDFF-FF67-4912-A828-6FE8A2F0D9FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hsc.ApiFramework.Database.SqlServer", "..\Hsc.ApiFramework.Database.SqlServer\Hsc.ApiFramework.Database.SqlServer.csproj", "{A93A20CF-E799-4FDD-836C-735CED3B1157}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{2EA53146-5C86-4A14-A6C9-8BF848F05C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EA53146-5C86-4A14-A6C9-8BF848F05C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EA53146-5C86-4A14-A6C9-8BF848F05C83}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9323DDFF-FF67-4912-A828-6FE8A2F0D9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9323DDFF-FF67-4912-A828-6FE8A2F0D9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9323DDFF-FF67-4912-A828-6FE8A2F0D9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9323DDFF-FF67-4912-A828-6FE8A2F0D9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A93A20CF-E799-4FDD-836C-735CED3B1157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A93A20CF-E799-4FDD-836C-735CED3B1157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A93A20CF-E799-4FDD-836C-735CED3B1157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A93A20CF-E799-4FDD-836C-735CED3B1157}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
