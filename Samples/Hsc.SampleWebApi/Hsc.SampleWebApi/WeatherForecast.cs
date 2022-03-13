@@ -1,8 +1,5 @@
-using Microsoft.AspNetCore.Authorization;
-
 namespace Hsc.SampleWebApi
 {
-    [Authorize]
     public class WeatherForecast
     {
         public DateTime Date { get; set; }
