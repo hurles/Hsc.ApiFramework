@@ -59,7 +59,7 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
         /// <typeparam name="TRole">Pre-existing IdentityRole</typeparam>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceCollection ConfigureHscAuthentication<TIdentityDbContext, TUser, TRole>(this IServiceCollection services)
+        public static IServiceCollection AddHscAuthentication<TIdentityDbContext, TUser, TRole>(this IServiceCollection services)
             where TIdentityDbContext : IdentityDbContext<TUser>
             where TUser : IdentityUser
             where TRole : IdentityRole
@@ -85,7 +85,7 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
         /// <typeparam name="TUser">Pre-existing IdentityUser</typeparam>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceCollection ConfigureHscAuthentication<TIdentityDbContext, TUser>(this IServiceCollection services)
+        public static IServiceCollection AddHscAuthentication<TIdentityDbContext, TUser>(this IServiceCollection services)
             where TIdentityDbContext : IdentityDbContext<TUser>
             where TUser : IdentityUser
         {
@@ -109,7 +109,7 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
         /// <typeparam name="TIdentityDbContext">Pre-existing IdentityDbContext</typeparam>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceCollection ConfigureHscAuthentication<TIdentityDbContext>(this IServiceCollection services) 
+        public static IServiceCollection AddHscAuthentication<TIdentityDbContext>(this IServiceCollection services) 
             where TIdentityDbContext : IdentityDbContext<IdentityUser>
         {
             services.AddHscConfigurationServices();
@@ -125,7 +125,7 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
         /// </summary>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceCollection ConfigureHscAuthentication(this IServiceCollection services)
+        public static IServiceCollection AddHscAuthentication(this IServiceCollection services)
         {
             services.AddHscConfigurationServices();
 

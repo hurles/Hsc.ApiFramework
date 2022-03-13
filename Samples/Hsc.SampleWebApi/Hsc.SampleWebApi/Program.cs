@@ -21,7 +21,7 @@ builder.Services.AddHscDatabase<HscDatabaseContext>();
     //Reliant on HSC_JWT_AUDIENCE for JWT token Audience - Usually set to the URL of the issueing server (http://localhost:{port} when running locally)
     //Reliant on HSC_JWT_ISSUER for JWT token Issuer - Usually set to the URL of the issueing server (http://localhost:{port} when running locally)
     //Reliant on HSC_JWT_SECRET secret used for JWT Token generation
-builder.Services.ConfigureHscAuthentication<HscDatabaseContext>();
+builder.Services.AddHscAuthentication<HscDatabaseContext>();
 
 
 var app = builder.Build();
