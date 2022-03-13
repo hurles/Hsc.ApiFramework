@@ -19,3 +19,9 @@ C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\obj\Debug\net6.0\Hsc.ApiFramework.
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\obj\Debug\net6.0\Hsc.ApiFramework.Core.dll
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\obj\Debug\net6.0\ref\Hsc.ApiFramework.Core.dll
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\obj\Debug\net6.0\Hsc.ApiFramework.Core.pdb
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\bin\Debug\net6.0\Hsc.ApiFramework.Core.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\bin\Debug\net6.0\Hsc.ApiFramework.Configuration.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\bin\Debug\net6.0\Hsc.ApiFramework.Enums.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\bin\Debug\net6.0\Hsc.ApiFramework.Interfaces.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\bin\Debug\net6.0\Hsc.ApiFramework.Models.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\obj\Debug\net6.0\Hsc.ApiFramework.Core.xml

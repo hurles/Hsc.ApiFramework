@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Authentication\\Hsc.ApiFramework.Authentication.csproj": {
-      "version": "0.0.2",
+      "version": "0.0.3",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Authentication\\Hsc.ApiFramework.Authentication.csproj",
         "projectName": "Hsc.ApiFramework.Authentication",
@@ -62,7 +62,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
@@ -70,7 +70,7 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
@@ -105,7 +105,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj": {
-      "version": "0.0.2",
+      "version": "0.0.3",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj",
         "projectName": "Hsc.ApiFramework.Configuration",
@@ -180,7 +180,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Core\\Hsc.ApiFramework.Core.csproj": {
-      "version": "0.0.2",
+      "version": "0.0.3",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Core\\Hsc.ApiFramework.Core.csproj",
         "projectName": "Hsc.ApiFramework.Core",
@@ -237,11 +237,11 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
@@ -249,11 +249,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             }
           },
           "imports": [
@@ -276,7 +272,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj": {
-      "version": "0.0.2",
+      "version": "0.0.3",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj",
         "projectName": "Hsc.ApiFramework.Enums",
@@ -337,7 +333,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFramework.Interfaces.csproj": {
-      "version": "0.0.2",
+      "version": "0.0.3",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFramework.Interfaces.csproj",
         "projectName": "Hsc.ApiFramework.Interfaces",
@@ -402,7 +398,7 @@
       }
     },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFramework.Models.csproj": {
-      "version": "0.0.2",
+      "version": "0.0.3",
       "restore": {
         "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Models\\Hsc.ApiFramework.Models.csproj",
         "projectName": "Hsc.ApiFramework.Models",

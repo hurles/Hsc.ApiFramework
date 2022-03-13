@@ -9,4 +9,5 @@ C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.dll
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\ref\Hsc.ApiFramework.Enums.dll
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.pdb
-C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.csproj.AssemblyReference.cache
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\bin\Debug\net6.0\Hsc.ApiFramework.Enums.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Enums\obj\Debug\net6.0\Hsc.ApiFramework.Enums.xml

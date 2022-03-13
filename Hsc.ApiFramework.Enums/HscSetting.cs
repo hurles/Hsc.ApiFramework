@@ -8,8 +8,14 @@ namespace Hsc.ApiFramework.Enums
 {
     public enum HscSetting
     {
+        //auth
         HSC_AUTH_JWT_AUDIENCE,
         HSC_AUTH_JWT_ISSUER,
-        HSC_AUTH_JWT_SECRET
+        HSC_AUTH_JWT_SECRET,
+
+        //db
+        HSC_DATABASE_CONNECTION
+
+
     }
 }

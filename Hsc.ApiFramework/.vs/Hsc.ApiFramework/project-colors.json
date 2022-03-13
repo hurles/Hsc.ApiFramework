@@ -70,7 +70,12 @@
       "ProjectGuid": "2ea53146-5c86-4a14-a6c9-8bf848f05c83",
       "DisplayName": "Hsc.ApiFramework.Models",
       "ColorIndex": 12
+    },
+    "91e1d411-11fd-493e-99c3-d0af4c37c789": {
+      "ProjectGuid": "91e1d411-11fd-493e-99c3-d0af4c37c789",
+      "DisplayName": "Hsc.Database.SqlServer",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 13
+  "NextColorIndex": 14
 }

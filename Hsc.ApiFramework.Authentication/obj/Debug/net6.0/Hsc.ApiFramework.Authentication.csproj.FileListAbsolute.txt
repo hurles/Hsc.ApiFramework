@@ -21,3 +21,10 @@ C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\obj\Debug\net6.0\Hsc.Api
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\obj\Debug\net6.0\Hsc.ApiFramework.Authentication.dll
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\obj\Debug\net6.0\ref\Hsc.ApiFramework.Authentication.dll
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\obj\Debug\net6.0\Hsc.ApiFramework.Authentication.pdb
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\bin\Debug\net6.0\Hsc.ApiFramework.Authentication.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\bin\Debug\net6.0\Hsc.ApiFramework.Configuration.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\bin\Debug\net6.0\Hsc.ApiFramework.Core.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\bin\Debug\net6.0\Hsc.ApiFramework.Enums.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\bin\Debug\net6.0\Hsc.ApiFramework.Models.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\bin\Debug\net6.0\Hsc.ApiFramework.Interfaces.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Authentication\obj\Debug\net6.0\Hsc.ApiFramework.Authentication.xml

@@ -16,7 +16,7 @@ namespace Hsc.ApiFramework.Configuration.Logic
             return Environment.GetEnvironmentVariable(GetSettingText(setting));
         }
 
-        private string GetSettingText(HscSetting setting)
+        public static string GetSettingText(HscSetting setting)
         {
             switch (setting)
             {
@@ -26,6 +26,8 @@ namespace Hsc.ApiFramework.Configuration.Logic
                     return "HSC_AUTH_JWT_ISSUER";
                 case HscSetting.HSC_AUTH_JWT_SECRET:
                     return "HSC_AUTH_JWT_SECRET";
+                case HscSetting.HSC_DATABASE_CONNECTION:
+                    return "HSC_DATABASE_CONNECTION";
                 default:
                     return string.Empty;
             }

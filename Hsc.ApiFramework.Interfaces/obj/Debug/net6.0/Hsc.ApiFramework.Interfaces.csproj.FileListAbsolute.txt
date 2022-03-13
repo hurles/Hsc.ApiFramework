@@ -13,3 +13,6 @@ C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\Hsc.ApiFram
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\bin\Debug\net6.0\Hsc.ApiFramework.Enums.dll
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\bin\Debug\net6.0\Hsc.ApiFramework.Enums.pdb
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\Hsc.ApiFramework.Interfaces.csproj.CopyComplete
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\bin\Debug\net6.0\Hsc.ApiFramework.Interfaces.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\bin\Debug\net6.0\Hsc.ApiFramework.Enums.xml
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Interfaces\obj\Debug\net6.0\Hsc.ApiFramework.Interfaces.xml
