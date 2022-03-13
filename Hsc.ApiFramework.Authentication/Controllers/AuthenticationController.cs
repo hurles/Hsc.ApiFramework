@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Hsc.ApiFramework.Configuration;
 using Hsc.ApiFramework.Enums;
+using Hsc.ApiFramework.Interfaces;
 using Hsc.ApiFramework.Models.Identity.Implementation;
 using Hsc.ApiFramework.Models.Responses;
 using Microsoft.AspNetCore.Http;
@@ -24,16 +25,16 @@ namespace Hsc.ApiFramework.Core.Controllers
 
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly HscApiConfig _configuration;
+        private readonly IHscConfigurationService _hscConfigurationService;
 
         public AuthenticationController(
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager,
-            HscApiConfig configuration)
+            IHscConfigurationService hscConfigurationService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
-            _configuration = configuration;
+            _hscConfigurationService = hscConfigurationService;
         }
 
         [HttpPost]
@@ -119,11 +120,11 @@ namespace Hsc.ApiFramework.Core.Controllers
 
         private JwtSecurityToken GetToken(List<Claim> authClaims)
         {
-            var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration.Authentication.Secret));
+            var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_hscConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET) ?? ""));
 
             var token = new JwtSecurityToken(
-                issuer: _configuration.Authentication.Issuer,
-                audience: _configuration.Authentication.Audience,
+                issuer: _hscConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
+                audience: _hscConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
                 expires: DateTime.Now.AddHours(3),
                 claims: authClaims,
                 signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Hsc.ApiFramework.Enums/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Hsc.ApiFramework.Enums.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hsc.ApiFramework.Enums.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Hsc.ApiFramework.Enums/0.0.1": {
+      "type": "project",
+      "path": "../Hsc.ApiFramework.Enums/Hsc.ApiFramework.Enums.csproj",
+      "msbuildProject": "../Hsc.ApiFramework.Enums/Hsc.ApiFramework.Enums.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Hsc.ApiFramework.Enums >= 0.0.1"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Hurles\\.nuget\\packages\\": {},
@@ -41,7 +60,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj": {
+              "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

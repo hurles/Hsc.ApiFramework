@@ -1,9 +1,15 @@
 ﻿using Hsc.ApiFramework.Configuration;
+using Hsc.ApiFramework.Configuration.DependencyInjection;
 using Hsc.ApiFramework.Core.Database;
+using Hsc.ApiFramework.Enums;
+using Hsc.ApiFramework.Interfaces;
+using Hsc.ApiFramework.Interfaces.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -15,11 +21,123 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection ConfigureHscAuthentication<T>(this IServiceCollection services, HscApiConfig appConfig) where T : HscDatabaseContext
+
+        /// <summary>
+        /// <b>Adds necessary services for HSC Framework Authentication</b>
+        /// <br/><br/>
+        /// <i>useAuthentication:</i> toggle whether default ASP.NET Core app.UseAuthentication() will be executed
+        /// <br/>
+        /// <i>useAuthorization:</i> toggle whether default ASP.NET Core app.UseAuthorization() will be executed
+        /// </summary>
+        /// <param name="app"></param>
+        /// <param name="useAuthentication">if true, default ASP.NET Core app.UseAuthentication() will be executed, only set to false if this is already executed in another method</param>
+        /// <param name="useAuthorization">if true, default ASP.NET Core app.UseAuthorization() will be executed, only set to false if this is already executed in another method</param>
+        /// <returns></returns>     
+        public static IApplicationBuilder UseHscAuthentication(this IApplicationBuilder app, bool useAuthentication = true, bool useAuthorization = true)
         {
-            services.AddIdentity<IdentityUser, IdentityRole>()
-            .AddEntityFrameworkStores<T>()
-            .AddDefaultTokenProviders();
+            if (useAuthentication)
+                app.UseAuthentication();
+
+            if (useAuthorization)
+                app.UseAuthorization();
+
+            return app;
+        }
+
+        /// <summary>
+        /// <b>Configure HSC Framework to use existing IdentityDbContext, IdentityUser and IdentityRole</b>
+        /// <br/><br/>
+        /// <i>Adds JWT token authentication using the following Environment variables:</i>
+        /// <br/>
+        /// <br/>HSC_JWT_AUDIENCE
+        /// <br/>HSC_JWT_ISSUER
+        /// <br/>HSC_JWT_SECRET
+        /// </summary>
+        /// <typeparam name="TIdentityDbContext">Pre-existing IdentityDbContext</typeparam>
+        /// <typeparam name="TUser">Pre-existing IdentityUser</typeparam>
+        /// <typeparam name="TRole">Pre-existing IdentityRole</typeparam>
+        /// <param name="services"></param>
+        /// <returns></returns>
+        public static IServiceCollection ConfigureHscAuthentication<TIdentityDbContext, TUser, TRole>(this IServiceCollection services)
+            where TIdentityDbContext : IdentityDbContext<TUser>
+            where TUser : IdentityUser
+            where TRole : IdentityRole
+        {
+            services.AddHscConfigurationServices();
+
+            services.ConfigureIdentityServices<TIdentityDbContext, TUser, TRole>();
+
+            services = ConfigureHscAuthenticationServices(services);
+            return services;
+        }
+
+        /// <summary>
+        /// <b>Configure HSC Framework to use existing IdentityDbContext and IdentityUser</b>
+        /// <br/><br/>
+        /// <i>Adds JWT token authentication using the following Environment variables:</i>
+        /// <br/>
+        /// <br/>HSC_JWT_AUDIENCE
+        /// <br/>HSC_JWT_ISSUER
+        /// <br/>HSC_JWT_SECRET
+        /// </summary>
+        /// <typeparam name="TIdentityDbContext">Pre-existing IdentityDbContext</typeparam>
+        /// <typeparam name="TUser">Pre-existing IdentityUser</typeparam>
+        /// <param name="services"></param>
+        /// <returns></returns>
+        public static IServiceCollection ConfigureHscAuthentication<TIdentityDbContext, TUser>(this IServiceCollection services)
+            where TIdentityDbContext : IdentityDbContext<TUser>
+            where TUser : IdentityUser
+        {
+            services.AddHscConfigurationServices();
+
+            services.ConfigureIdentityServices<TIdentityDbContext, TUser>();
+
+            services = ConfigureHscAuthenticationServices(services);
+            return services;
+        }
+
+        /// <summary>
+        /// <b>Configure HSC Framework to use existing IdentityDbContext</b>
+        /// <br/><br/>
+        /// <i>Adds JWT token authentication using the following Environment variables:</i>
+        /// <br/>
+        /// <br/>HSC_JWT_AUDIENCE
+        /// <br/>HSC_JWT_ISSUER
+        /// <br/>HSC_JWT_SECRET
+        /// </summary>
+        /// <typeparam name="TIdentityDbContext">Pre-existing IdentityDbContext</typeparam>
+        /// <param name="services"></param>
+        /// <returns></returns>
+        public static IServiceCollection ConfigureHscAuthentication<TIdentityDbContext>(this IServiceCollection services) 
+            where TIdentityDbContext : IdentityDbContext<IdentityUser>
+        {
+            services.AddHscConfigurationServices();
+
+            services.ConfigureIdentityServices<TIdentityDbContext>();
+
+            services = ConfigureHscAuthenticationServices(services);
+            return services;
+        }
+
+        /// <summary>
+        /// <b>Configure HSC Framework to use default AspNetCore IdentityDbContext, IdentityUser and IdentityRole</b>
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
+        public static IServiceCollection ConfigureHscAuthentication(this IServiceCollection services)
+        {
+            services.AddHscConfigurationServices();
+
+            services.ConfigureIdentityServices();
+
+            services = ConfigureHscAuthenticationServices(services);
+            return services;
+        }
+
+        private static IServiceCollection ConfigureHscAuthenticationServices(IServiceCollection services)
+        {
+            //get configuration service
+            var config = services.BuildServiceProvider().GetRequiredService<IHscConfigurationService>();
 
             // Adding Authentication
             services.AddAuthentication(options =>
@@ -38,20 +156,12 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidAudience = appConfig.Authentication.Audience,
-                    ValidIssuer = appConfig.Authentication.Issuer,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(appConfig.Authentication.Secret))
+                    ValidAudience = config.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
+                    ValidIssuer = config.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET) ?? ""))
                 };
             });
             return services;
-        }
-
-        public static IApplicationBuilder UseHscAuthentication(this IApplicationBuilder app)
-        {
-            app.UseAuthentication();
-            app.UseAuthorization();
-
-            return app;
         }
     }
 }

@@ -4,6 +4,67 @@
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFramework.Interfaces.csproj": {}
   },
   "projects": {
+    "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj": {
+      "version": "0.0.1",
+      "restore": {
+        "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj",
+        "projectName": "Hsc.ApiFramework.Enums",
+        "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj",
+        "packagesPath": "C:\\Users\\Hurles\\.nuget\\packages\\",
+        "outputPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hurles\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://go.microsoft.com/fwlink/?LinkID=206669": {},
+          "http://go.microsoft.com/fwlink/?LinkID=230477": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2/": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFramework.Interfaces.csproj": {
       "version": "0.0.1",
       "restore": {
@@ -34,7 +95,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj": {
+                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

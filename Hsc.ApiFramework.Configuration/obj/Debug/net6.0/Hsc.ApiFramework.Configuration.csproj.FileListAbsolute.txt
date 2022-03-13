@@ -10,3 +10,8 @@ C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\obj\Debug\net6.0\Hsc.ApiF
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\obj\Debug\net6.0\ref\Hsc.ApiFramework.Configuration.dll
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\obj\Debug\net6.0\Hsc.ApiFramework.Configuration.pdb
 C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\obj\Debug\net6.0\Hsc.ApiFramework.Configuration.csproj.AssemblyReference.cache
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\bin\Debug\net6.0\Hsc.ApiFramework.Interfaces.dll
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\bin\Debug\net6.0\Hsc.ApiFramework.Interfaces.pdb
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\obj\Debug\net6.0\Hsc.ApiFramework.Configuration.csproj.CopyComplete
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\bin\Debug\net6.0\Hsc.ApiFramework.Enums.dll
+C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Configuration\bin\Debug\net6.0\Hsc.ApiFramework.Enums.pdb

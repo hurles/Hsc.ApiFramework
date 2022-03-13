@@ -34,7 +34,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFramework.Interfaces.csproj": {
+                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Interfaces\\Hsc.ApiFramework.Interfaces.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -46,6 +50,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -122,6 +136,10 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[6.0.2, )"
             },
@@ -248,7 +266,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj": {
+                "projectPath": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Enums\\Hsc.ApiFramework.Enums.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

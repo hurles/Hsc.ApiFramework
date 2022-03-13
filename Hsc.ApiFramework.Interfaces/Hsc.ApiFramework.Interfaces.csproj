@@ -23,6 +23,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Hsc.ApiFramework.Enums\Hsc.ApiFramework.Enums.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="HSC Framework logo 128.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
