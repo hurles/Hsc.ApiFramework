@@ -13,8 +13,6 @@ namespace Hsc.ApiFramework.Configuration.DependencyInjection
     {
         public static IServiceCollection AddHscConfigurationServices(this IServiceCollection services)
         {
-            services.AddSingleton<IHscConfigurationService, HscEnvironmentConfigurationService>();
-
             return services;
         }
     }

@@ -4,6 +4,6 @@ namespace Hsc.ApiFramework.Interfaces
 {
     public interface IHscConfigurationService
     {
-        public string? GetSetting(HscSetting setting);
+
     }
 }

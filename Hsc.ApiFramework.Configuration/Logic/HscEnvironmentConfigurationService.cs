@@ -9,11 +9,16 @@ using System.Threading.Tasks;
 
 namespace Hsc.ApiFramework.Configuration.Logic
 {
-    public class HscEnvironmentConfigurationService : IHscConfigurationService
+    public static class HscEnvironmentConfigurationService
     {
-        public string? GetSetting(HscSetting setting)
+        public static string? GetSetting(HscSetting setting)
         {
-            return Environment.GetEnvironmentVariable(GetSettingText(setting));
+            var settingValue = Environment.GetEnvironmentVariable(GetSettingText(setting));
+
+            if (settingValue != null)
+                return settingValue;
+            else
+                throw new HscConfigurationException($"Could not value for {setting}. Make sure the environment variable '{setting}' is set");
         }
 
         public static string GetSettingText(HscSetting setting)
@@ -31,6 +36,15 @@ namespace Hsc.ApiFramework.Configuration.Logic
                 default:
                     return string.Empty;
             }
+        }
+    }
+
+    public class HscConfigurationException : Exception
+    {
+        public HscConfigurationException(string? message) 
+            : base(message)
+        {
+
         }
     }
 }

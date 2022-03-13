@@ -6,6 +6,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Hsc.ApiFramework.Configuration;
+using Hsc.ApiFramework.Configuration.Logic;
 using Hsc.ApiFramework.Enums;
 using Hsc.ApiFramework.Interfaces;
 using Hsc.ApiFramework.Models.Identity.Implementation;
@@ -25,16 +26,13 @@ namespace Hsc.ApiFramework.Core.Controllers
 
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly IHscConfigurationService _hscConfigurationService;
 
         public AuthenticationController(
             UserManager<IdentityUser> userManager,
-            RoleManager<IdentityRole> roleManager,
-            IHscConfigurationService hscConfigurationService)
+            RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _roleManager = roleManager;
-            _hscConfigurationService = hscConfigurationService;
         }
 
         [HttpPost]
@@ -120,11 +118,11 @@ namespace Hsc.ApiFramework.Core.Controllers
 
         private JwtSecurityToken GetToken(List<Claim> authClaims)
         {
-            var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_hscConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET) ?? ""));
+            var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET) ?? ""));
 
             var token = new JwtSecurityToken(
-                issuer: _hscConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
-                audience: _hscConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
+                issuer: HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
+                audience: HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
                 expires: DateTime.Now.AddHours(3),
                 claims: authClaims,
                 signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)

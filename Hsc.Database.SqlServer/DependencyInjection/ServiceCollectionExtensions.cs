@@ -15,18 +15,18 @@ namespace Hsc.ApiFramework.Database.SqlServer.DependencyInjection
         /// <br/>
         /// <br/>HSC_DATABASE_CONNECTION
         /// </summary>
-        /// <typeparam name="TDatabase"></typeparam>
+        /// <typeparam name="TDbContext"></typeparam>
         /// <param name="services"></param>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public static IServiceCollection AddHscDatabase<TDatabase>(this IServiceCollection services)
-            where TDatabase : DbContext
+        public static IServiceCollection AddHscDatabase<TDbContext>(this IServiceCollection services)
+            where TDbContext : DbContext
         {
             var connectionString = Environment.GetEnvironmentVariable(HscEnvironmentConfigurationService.GetSettingText(HscSetting.HSC_DATABASE_CONNECTION));
 
             if (connectionString != null)
             {
-                services.AddDbContext<TDatabase>(options =>
+                services.AddDbContext<TDbContext>(options =>
                 {
                     options.UseSqlServer(connectionString);
                 });

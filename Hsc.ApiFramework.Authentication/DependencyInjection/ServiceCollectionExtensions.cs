@@ -1,5 +1,6 @@
 ﻿using Hsc.ApiFramework.Configuration;
 using Hsc.ApiFramework.Configuration.DependencyInjection;
+using Hsc.ApiFramework.Configuration.Logic;
 using Hsc.ApiFramework.Core.Database;
 using Hsc.ApiFramework.Enums;
 using Hsc.ApiFramework.Interfaces;
@@ -136,8 +137,6 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
 
         private static IServiceCollection ConfigureHscAuthenticationServices(IServiceCollection services)
         {
-            //get configuration service
-            var config = services.BuildServiceProvider().GetRequiredService<IHscConfigurationService>();
 
             // Adding Authentication
             services.AddAuthentication(options =>
@@ -156,9 +155,9 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidAudience = config.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
-                    ValidIssuer = config.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET) ?? ""))
+                    ValidAudience = HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
+                    ValidIssuer = HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET) ?? ""))
                 };
             });
             return services;
