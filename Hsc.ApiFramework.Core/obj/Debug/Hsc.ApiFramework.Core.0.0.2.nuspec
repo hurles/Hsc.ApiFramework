@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Hsc.ApiFramework.Core</id>
+    <version>0.0.2</version>
+    <authors>Hurles</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>HSC Framework logo 128.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/hurles/Hsc.ApiFramework</projectUrl>
+    <description>Base Configuration for Hsc.Framework</description>
+    <releaseNotes>Initial Pre-Release</releaseNotes>
+    <tags>Hsc Framework Configuration Api</tags>
+    <repository type="git" url="https://github.com/hurles/Hsc.ApiFramework" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Hsc.ApiFramework.Configuration" version="0.0.2" exclude="Build,Analyzers" />
+        <dependency id="Hsc.ApiFramework.Enums" version="0.0.2" exclude="Build,Analyzers" />
+        <dependency id="Hsc.ApiFramework.Interfaces" version="0.0.2" exclude="Build,Analyzers" />
+        <dependency id="Hsc.ApiFramework.Models" version="0.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="6.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity.UI" version="6.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.2.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="6.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="6.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\bin\Debug\net6.0\Hsc.ApiFramework.Core.dll" target="lib\net6.0\Hsc.ApiFramework.Core.dll" />
+    <file src="C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\HSC Framework logo 128.png" target="\HSC Framework logo 128.png" />
+    <file src="C:\GIT\Hsc.ApiFramework\Hsc.ApiFramework.Core\README.md" target="\README.md" />
+  </files>
+</package>

@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Hsc.ApiFramework.Core/0.0.1": {
+      "Hsc.ApiFramework.Core/0.0.2": {
         "dependencies": {
-          "Hsc.ApiFramework.Configuration": "0.0.1",
-          "Hsc.ApiFramework.Enums": "0.0.1",
-          "Hsc.ApiFramework.Interfaces": "0.0.1",
-          "Hsc.ApiFramework.Models": "0.0.1",
+          "Hsc.ApiFramework.Configuration": "0.0.2",
+          "Hsc.ApiFramework.Enums": "0.0.2",
+          "Hsc.ApiFramework.Interfaces": "0.0.2",
+          "Hsc.ApiFramework.Models": "0.0.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.2",
           "Microsoft.AspNetCore.Identity.UI": "6.0.2",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
@@ -1006,9 +1006,9 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "Hsc.ApiFramework.Configuration/0.0.1": {
+      "Hsc.ApiFramework.Configuration/0.0.2": {
         "dependencies": {
-          "Hsc.ApiFramework.Interfaces": "0.0.1",
+          "Hsc.ApiFramework.Interfaces": "0.0.2",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
         },
@@ -1016,20 +1016,20 @@
           "Hsc.ApiFramework.Configuration.dll": {}
         }
       },
-      "Hsc.ApiFramework.Enums/0.0.1": {
+      "Hsc.ApiFramework.Enums/0.0.2": {
         "runtime": {
           "Hsc.ApiFramework.Enums.dll": {}
         }
       },
-      "Hsc.ApiFramework.Interfaces/0.0.1": {
+      "Hsc.ApiFramework.Interfaces/0.0.2": {
         "dependencies": {
-          "Hsc.ApiFramework.Enums": "0.0.1"
+          "Hsc.ApiFramework.Enums": "0.0.2"
         },
         "runtime": {
           "Hsc.ApiFramework.Interfaces.dll": {}
         }
       },
-      "Hsc.ApiFramework.Models/0.0.1": {
+      "Hsc.ApiFramework.Models/0.0.2": {
         "runtime": {
           "Hsc.ApiFramework.Models.dll": {}
         }
@@ -1037,7 +1037,7 @@
     }
   },
   "libraries": {
-    "Hsc.ApiFramework.Core/0.0.1": {
+    "Hsc.ApiFramework.Core/0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1798,22 +1798,22 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "Hsc.ApiFramework.Configuration/0.0.1": {
+    "Hsc.ApiFramework.Configuration/0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Hsc.ApiFramework.Enums/0.0.1": {
+    "Hsc.ApiFramework.Enums/0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Hsc.ApiFramework.Interfaces/0.0.1": {
+    "Hsc.ApiFramework.Interfaces/0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Hsc.ApiFramework.Models/0.0.1": {
+    "Hsc.ApiFramework.Models/0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

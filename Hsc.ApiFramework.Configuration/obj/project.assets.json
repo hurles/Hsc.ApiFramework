@@ -53,7 +53,7 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Hsc.ApiFramework.Enums/0.0.1": {
+      "Hsc.ApiFramework.Enums/0.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
@@ -63,11 +63,11 @@
           "bin/placeholder/Hsc.ApiFramework.Enums.dll": {}
         }
       },
-      "Hsc.ApiFramework.Interfaces/0.0.1": {
+      "Hsc.ApiFramework.Interfaces/0.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Hsc.ApiFramework.Enums": "0.0.1"
+          "Hsc.ApiFramework.Enums": "0.0.2"
         },
         "compile": {
           "bin/placeholder/Hsc.ApiFramework.Interfaces.dll": {}
@@ -173,12 +173,12 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Hsc.ApiFramework.Enums/0.0.1": {
+    "Hsc.ApiFramework.Enums/0.0.2": {
       "type": "project",
       "path": "../Hsc.ApiFramework.Enums/Hsc.ApiFramework.Enums.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Enums/Hsc.ApiFramework.Enums.csproj"
     },
-    "Hsc.ApiFramework.Interfaces/0.0.1": {
+    "Hsc.ApiFramework.Interfaces/0.0.2": {
       "type": "project",
       "path": "../Hsc.ApiFramework.Interfaces/Hsc.ApiFramework.Interfaces.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Interfaces/Hsc.ApiFramework.Interfaces.csproj"
@@ -186,7 +186,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Hsc.ApiFramework.Interfaces >= 0.0.1",
+      "Hsc.ApiFramework.Interfaces >= 0.0.2",
       "Microsoft.Extensions.Configuration.Abstractions >= 6.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0"
     ]
@@ -196,7 +196,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "restore": {
       "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Configuration\\Hsc.ApiFramework.Configuration.csproj",
       "projectName": "Hsc.ApiFramework.Configuration",

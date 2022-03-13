@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <SignAssembly>False</SignAssembly>
     <Company></Company>

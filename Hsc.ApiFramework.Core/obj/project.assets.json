@@ -1583,11 +1583,11 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Hsc.ApiFramework.Configuration/0.0.1": {
+      "Hsc.ApiFramework.Configuration/0.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Hsc.ApiFramework.Interfaces": "0.0.1",
+          "Hsc.ApiFramework.Interfaces": "0.0.2",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
         },
@@ -1598,7 +1598,7 @@
           "bin/placeholder/Hsc.ApiFramework.Configuration.dll": {}
         }
       },
-      "Hsc.ApiFramework.Enums/0.0.1": {
+      "Hsc.ApiFramework.Enums/0.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
@@ -1608,11 +1608,11 @@
           "bin/placeholder/Hsc.ApiFramework.Enums.dll": {}
         }
       },
-      "Hsc.ApiFramework.Interfaces/0.0.1": {
+      "Hsc.ApiFramework.Interfaces/0.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Hsc.ApiFramework.Enums": "0.0.1"
+          "Hsc.ApiFramework.Enums": "0.0.2"
         },
         "compile": {
           "bin/placeholder/Hsc.ApiFramework.Interfaces.dll": {}
@@ -1621,7 +1621,7 @@
           "bin/placeholder/Hsc.ApiFramework.Interfaces.dll": {}
         }
       },
-      "Hsc.ApiFramework.Models/0.0.1": {
+      "Hsc.ApiFramework.Models/0.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
@@ -5519,22 +5519,22 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Hsc.ApiFramework.Configuration/0.0.1": {
+    "Hsc.ApiFramework.Configuration/0.0.2": {
       "type": "project",
       "path": "../Hsc.ApiFramework.Configuration/Hsc.ApiFramework.Configuration.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Configuration/Hsc.ApiFramework.Configuration.csproj"
     },
-    "Hsc.ApiFramework.Enums/0.0.1": {
+    "Hsc.ApiFramework.Enums/0.0.2": {
       "type": "project",
       "path": "../Hsc.ApiFramework.Enums/Hsc.ApiFramework.Enums.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Enums/Hsc.ApiFramework.Enums.csproj"
     },
-    "Hsc.ApiFramework.Interfaces/0.0.1": {
+    "Hsc.ApiFramework.Interfaces/0.0.2": {
       "type": "project",
       "path": "../Hsc.ApiFramework.Interfaces/Hsc.ApiFramework.Interfaces.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Interfaces/Hsc.ApiFramework.Interfaces.csproj"
     },
-    "Hsc.ApiFramework.Models/0.0.1": {
+    "Hsc.ApiFramework.Models/0.0.2": {
       "type": "project",
       "path": "../Hsc.ApiFramework.Models/Hsc.ApiFramework.Models.csproj",
       "msbuildProject": "../Hsc.ApiFramework.Models/Hsc.ApiFramework.Models.csproj"
@@ -5542,10 +5542,10 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Hsc.ApiFramework.Configuration >= 0.0.1",
-      "Hsc.ApiFramework.Enums >= 0.0.1",
-      "Hsc.ApiFramework.Interfaces >= 0.0.1",
-      "Hsc.ApiFramework.Models >= 0.0.1",
+      "Hsc.ApiFramework.Configuration >= 0.0.2",
+      "Hsc.ApiFramework.Enums >= 0.0.2",
+      "Hsc.ApiFramework.Interfaces >= 0.0.2",
+      "Hsc.ApiFramework.Models >= 0.0.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.2",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.2",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
@@ -5558,7 +5558,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "0.0.1",
+    "version": "0.0.2",
     "restore": {
       "projectUniqueName": "C:\\GIT\\Hsc.ApiFramework\\Hsc.ApiFramework.Core\\Hsc.ApiFramework.Core.csproj",
       "projectName": "Hsc.ApiFramework.Core",

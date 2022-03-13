@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Base Configuration for Hsc.Framework")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.1")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hsc.ApiFramework.Interfaces")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hsc.ApiFramework.Interfaces")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.1")]

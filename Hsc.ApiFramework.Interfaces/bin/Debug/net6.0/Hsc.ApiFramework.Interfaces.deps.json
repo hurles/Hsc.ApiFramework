@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Hsc.ApiFramework.Interfaces/0.0.1": {
+      "Hsc.ApiFramework.Interfaces/0.0.2": {
         "dependencies": {
-          "Hsc.ApiFramework.Enums": "0.0.1"
+          "Hsc.ApiFramework.Enums": "0.0.2"
         },
         "runtime": {
           "Hsc.ApiFramework.Interfaces.dll": {}
         }
       },
-      "Hsc.ApiFramework.Enums/0.0.1": {
+      "Hsc.ApiFramework.Enums/0.0.2": {
         "runtime": {
           "Hsc.ApiFramework.Enums.dll": {}
         }
@@ -22,12 +22,12 @@
     }
   },
   "libraries": {
-    "Hsc.ApiFramework.Interfaces/0.0.1": {
+    "Hsc.ApiFramework.Interfaces/0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Hsc.ApiFramework.Enums/0.0.1": {
+    "Hsc.ApiFramework.Enums/0.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
