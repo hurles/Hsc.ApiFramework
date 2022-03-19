@@ -75,7 +75,17 @@
       "ProjectGuid": "91e1d411-11fd-493e-99c3-d0af4c37c789",
       "DisplayName": "Hsc.Database.SqlServer",
       "ColorIndex": 13
+    },
+    "9323ddff-ff67-4912-a828-6fe8a2f0d9fd": {
+      "ProjectGuid": "9323ddff-ff67-4912-a828-6fe8a2f0d9fd",
+      "DisplayName": "Hsc.ApiFramework.Database.SqlServer",
+      "ColorIndex": 14
+    },
+    "a93a20cf-e799-4fdd-836c-735ced3b1157": {
+      "ProjectGuid": "a93a20cf-e799-4fdd-836c-735ced3b1157",
+      "DisplayName": "Hsc.ApiFramework.Database.SqlServer",
+      "ColorIndex": 15
     }
   },
-  "NextColorIndex": 14
+  "NextColorIndex": 0
 }

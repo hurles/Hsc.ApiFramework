@@ -11,13 +11,13 @@ services:
           - "5080:80"
         environment:
             #change this to the actual URL in production environments
-            HSC_JWT_AUDIENCE: "https://localhost:5443"
+            HSC_AUTH_JWT_AUDIENCE: "https://localhost:5443"
             #change this to the actual URL  in production environments
-            HSC_JWT_ISSUER:  "https://localhost:5443"
+            HSC_AUTH_JWT_ISSUER:  "https://localhost:5443"
             #for example purposes only - change this to a different secret
-            HSC_JWT_SECRET: "qxBCtzLpUZRaBppKLQrnopqco88KNYEyVxF6F1W9"
+            HSC_AUTH_JWT_SECRET: "qxBCtzLpUZRaBppKLQrnopqco88KNYEyVxF6F1W9"
             #for example purposes only - don't use sa user or this default password in a production environment'
-            HSC_DATABASE_CONNECTION: Server=db01;Initial Catalog=ApiDb;User=sa;Password=FzyNPObxGgBT69DlD4ncHJtovNIMG2;
+            HSC_DATABASE_CONNECTION: Server=db01;Initial Catalog=HscSampleDb;User=sa;Password=FzyNPObxGgBT69DlD4ncHJtovNIMG2;
 
         depends_on:
           - db01

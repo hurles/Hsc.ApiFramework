@@ -155,9 +155,10 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidAudience = HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
-                    ValidIssuer = HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET) ?? ""))
+                    ValidateLifetime = true,
+                    ValidAudience = HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
+                    ValidIssuer = HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET)))
                 };
             });
             return services;

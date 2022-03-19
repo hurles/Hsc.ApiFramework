@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace Hsc.ApiFramework.Configuration.Logic
 {
-    public static class HscEnvironmentConfigurationService
+    /// <summary>
+    /// Helper class to get HSC environment variable settings
+    /// </summary>
+    public static class HscEnvironmentConfiguration
     {
         public static string? GetSetting(HscSetting setting)
         {
@@ -17,6 +20,16 @@ namespace Hsc.ApiFramework.Configuration.Logic
 
             if (settingValue != null)
                 return settingValue;
+            else
+                throw new HscConfigurationException($"Could not value for {setting}. Make sure the environment variable '{setting}' is set");
+        }
+
+        public static double? GetDoubleSetting(HscSetting setting)
+        {
+            var settingValue = Environment.GetEnvironmentVariable(GetSettingText(setting));
+
+            if (settingValue != null && double.TryParse(settingValue, out var doubleValue))
+                return doubleValue;
             else
                 throw new HscConfigurationException($"Could not value for {setting}. Make sure the environment variable '{setting}' is set");
         }
@@ -33,6 +46,8 @@ namespace Hsc.ApiFramework.Configuration.Logic
                     return "HSC_AUTH_JWT_SECRET";
                 case HscSetting.HSC_DATABASE_CONNECTION:
                     return "HSC_DATABASE_CONNECTION";
+                case HscSetting.HSC_TOKEN_DURATION:
+                    return "HSC_TOKEN_DURATION";
                 default:
                     return string.Empty;
             }

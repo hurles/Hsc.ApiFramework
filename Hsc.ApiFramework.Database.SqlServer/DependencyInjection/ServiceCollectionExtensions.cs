@@ -22,11 +22,16 @@ namespace Hsc.ApiFramework.Database.SqlServer.DependencyInjection
         public static IServiceCollection AddHscDatabase<TDbContext>(this IServiceCollection services)
             where TDbContext : DbContext
         {
-            var connectionString = Environment.GetEnvironmentVariable(HscEnvironmentConfigurationService.GetSettingText(HscSetting.HSC_DATABASE_CONNECTION));
+            var connectionString = Environment.GetEnvironmentVariable(HscEnvironmentConfiguration.GetSettingText(HscSetting.HSC_DATABASE_CONNECTION));
 
             services.AddDbContext<TDbContext>(options =>
             {
-                options.UseSqlServer(connectionString);
+                options.UseSqlServer(connectionString, sqlServerOptions =>
+                    sqlServerOptions.EnableRetryOnFailure(
+                        maxRetryCount: 10,
+                        maxRetryDelay: TimeSpan.FromSeconds(30),
+                        errorNumbersToAdd: null)
+                );
             });
 
             return services;
@@ -43,7 +48,7 @@ namespace Hsc.ApiFramework.Database.SqlServer.DependencyInjection
         /// <exception cref="Exception"></exception>
         public static IServiceCollection AddHscDatabase(this IServiceCollection services)
         {
-            var connectionString = Environment.GetEnvironmentVariable(HscEnvironmentConfigurationService.GetSettingText(HscSetting.HSC_DATABASE_CONNECTION));
+            var connectionString = Environment.GetEnvironmentVariable(HscEnvironmentConfiguration.GetSettingText(HscSetting.HSC_DATABASE_CONNECTION));
 
             services.AddDbContext<HscDatabaseContext>(options =>
             {

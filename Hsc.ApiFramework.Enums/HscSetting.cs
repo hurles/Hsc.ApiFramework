@@ -8,12 +8,29 @@ namespace Hsc.ApiFramework.Enums
 {
     public enum HscSetting
     {
-        //auth
+        /// <summary>
+        /// JWT Token Audience
+        /// </summary>
         HSC_AUTH_JWT_AUDIENCE,
+
+        /// <summary>
+        /// JWT Token ISSUER
+        /// </summary>
         HSC_AUTH_JWT_ISSUER,
+
+        /// <summary>
+        /// JWT Token secret
+        /// </summary>
         HSC_AUTH_JWT_SECRET,
 
-        //db
+        /// <summary>
+        /// JWT Token duration in hours
+        /// </summary>
+        HSC_TOKEN_DURATION,
+
+        /// <summary>
+        /// Database connection string
+        /// </summary>
         HSC_DATABASE_CONNECTION
 
 

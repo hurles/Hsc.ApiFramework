@@ -118,12 +118,12 @@ namespace Hsc.ApiFramework.Core.Controllers
 
         private JwtSecurityToken GetToken(List<Claim> authClaims)
         {
-            var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET) ?? ""));
+            var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET)));
 
             var token = new JwtSecurityToken(
-                issuer: HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
-                audience: HscEnvironmentConfigurationService.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
-                expires: DateTime.Now.AddHours(3),
+                issuer: HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
+                audience: HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
+                expires: DateTime.Now.AddHours(HscEnvironmentConfiguration.GetDoubleSetting(HscSetting.HSC_TOKEN_DURATION) ?? 3),
                 claims: authClaims,
                 signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
                 );
