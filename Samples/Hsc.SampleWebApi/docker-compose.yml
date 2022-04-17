@@ -21,12 +21,12 @@ services:
             HSC_DATABASE_CONNECTION: Server=testprojectdb;Initial Catalog=HscSampleDbTest;User=sa;Password=R6:&v&(44+$w4cwjNu/v-a:GX$m:w4;
             #token duration in hours
             HSC_TOKEN_DURATION: 3.0
-            #for example purposes only - don't use sa user or this default password in a production environment'
-            HSC_INITIAL_USERNAME: Hurles
-            #for example purposes only - don't use sa user or this default password in a production environment'
-            HSC_INITIAL_PASSWORD: V1ctordenAppel!
-            #for example purposes only - don't use sa user or this default password in a production environment'
-            HSC_INITIAL_EMAIL: example@example.com
+            #for example purposes only'
+            HSC_INITIAL_USERNAME: Admin
+            #for example purposes only'
+            HSC_INITIAL_PASSWORD: P4$$w0rd
+            #for example purposes only'
+            HSC_INITIAL_EMAIL: admin@example.com
             
         depends_on:
           - testprojectdb
