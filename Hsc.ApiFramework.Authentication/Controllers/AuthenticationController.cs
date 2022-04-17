@@ -8,9 +8,11 @@ using System.Threading.Tasks;
 using Hsc.ApiFramework.Configuration;
 using Hsc.ApiFramework.Configuration.Logic;
 using Hsc.ApiFramework.Enums;
+using Hsc.ApiFramework.Enums.Extensions;
 using Hsc.ApiFramework.Interfaces;
 using Hsc.ApiFramework.Models.Identity.Implementation;
 using Hsc.ApiFramework.Models.Responses;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -47,10 +49,11 @@ namespace Hsc.ApiFramework.Core.Controllers
         /// Endpoint to get login JWT token
         /// </summary>
         /// <param name="model"></param>
+        /// <param name="cancellationToken"></param>
         /// <returns></returns>
         [HttpPost]
         [Route("login")]
-        public async Task<IActionResult> Login([FromBody] LoginModel model)
+        public async Task<IActionResult> Login([FromBody] LoginModel model, CancellationToken cancellationToken)
         {
             var user = await _userManager.FindByNameAsync(model.Username);
             if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
@@ -83,10 +86,11 @@ namespace Hsc.ApiFramework.Core.Controllers
         /// Endpoint to register a new user
         /// </summary>
         /// <param name="model"></param>
+        /// <param name="cancellationToken"></param>
         /// <returns></returns>
         [HttpPost]
         [Route("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterModel model)
+        public async Task<IActionResult> Register([FromBody] RegisterModel model, CancellationToken cancellationToken)
         {
             var userExists = await _userManager.FindByNameAsync(model.Username);
             if (userExists != null)
@@ -111,10 +115,12 @@ namespace Hsc.ApiFramework.Core.Controllers
         /// Register admin user
         /// </summary>
         /// <param name="model"></param>
+        /// <param name="cancellationToken"></param>
         /// <returns></returns>
         [HttpPost]
         [Route("register-admin")]
-        public async Task<IActionResult> RegisterAdmin([FromBody] RegisterModel model)
+        [Authorize(Roles = "SuperAdmin")]
+        public async Task<IActionResult> RegisterAdmin([FromBody] RegisterModel model, CancellationToken cancellationToken)
         {
             var userExists = await _userManager.FindByNameAsync(model.Username);
             if (userExists != null)
@@ -134,6 +140,8 @@ namespace Hsc.ApiFramework.Core.Controllers
             await _userManager.AddToRoleAsync(user, HscUserRoles.Moderator.ToString());
             await _userManager.AddToRoleAsync(user, HscUserRoles.User.ToString());
 
+            await AddUserToRolesAsync(user, HscUserRoles.Admin, HscUserRoles.Moderator, HscUserRoles.User);
+
             return Ok(user);
         }
 
@@ -150,6 +158,14 @@ namespace Hsc.ApiFramework.Core.Controllers
                 );
 
             return token;
+        }
+
+        private async Task AddUserToRolesAsync(IdentityUser user, params HscUserRoles[] roles)
+        {
+            foreach (var role in roles)
+            {
+                await _userManager.AddToRoleAsync(user, role.ToString());
+            }
         }
     }
 }
