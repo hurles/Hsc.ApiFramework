@@ -2,6 +2,7 @@ version: '3.4'
 
 services:
     hsc.samplewebapi:
+        container_name: Hsc.SampleWebApi
         image: ${DOCKER_REGISTRY-}hscsamplewebapi
         build:
           context: .
@@ -11,25 +12,35 @@ services:
           - "5080:80"
         environment:
             #change this to the actual URL in production environments
-            HSC_AUTH_JWT_AUDIENCE: "https://localhost:5443"
+            HSC_AUTH_JWT_AUDIENCE: https://localhost:5443
             #change this to the actual URL  in production environments
-            HSC_AUTH_JWT_ISSUER:  "https://localhost:5443"
+            HSC_AUTH_JWT_ISSUER: https://localhost:5443
             #for example purposes only - change this to a different secret
-            HSC_AUTH_JWT_SECRET: "qxBCtzLpUZRaBppKLQrnopqco88KNYEyVxF6F1W9"
+            HSC_AUTH_JWT_SECRET: qxBCtzLpUZRaBppKLQrnopqco88KNYEyVxF6F1W9
             #for example purposes only - don't use sa user or this default password in a production environment'
-            HSC_DATABASE_CONNECTION: Server=db01;Initial Catalog=HscSampleDb;User=sa;Password=FzyNPObxGgBT69DlD4ncHJtovNIMG2;
-
+            HSC_DATABASE_CONNECTION: Server=testprojectdb;Initial Catalog=HscSampleDbTest;User=sa;Password=R6:&v&(44+$w4cwjNu/v-a:GX$m:w4;
+            #token duration in hours
+            HSC_TOKEN_DURATION: 3.0
+            #for example purposes only - don't use sa user or this default password in a production environment'
+            HSC_INITIAL_USERNAME: Hurles
+            #for example purposes only - don't use sa user or this default password in a production environment'
+            HSC_INITIAL_PASSWORD: V1ctordenAppel!
+            #for example purposes only - don't use sa user or this default password in a production environment'
+            HSC_INITIAL_EMAIL: example@example.com
+            
         depends_on:
-          - db01
+          - testprojectdb
     #Sample Microsoft SQL database for example purposes only - don't use sa user or this default password in a production environment'
-    db01:
+    testprojectdb:
         image: mcr.microsoft.com/mssql/server
         container_name: Hsc.SampleWebApi.Database
+        ports:
+          - "1500:1433"
         volumes:
           - hscsampledb:/var/opt/mssql
         environment:
-            SA_PASSWORD: "FzyNPObxGgBT69DlD4ncHJtovNIMG2"
+            MSSQL_SA_PASSWORD: "R6:&v&(44+$w4cwjNu/v-a:GX$m:w4"
             ACCEPT_EULA: "Y"
-            MSSQL_PID: "Express"
+            SA_PASSWORD: "R6:&v&(44+$w4cwjNu/v-a:GX$m:w4"
 volumes:
   hscsampledb:

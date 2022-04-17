@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -20,6 +21,9 @@ using System.Threading.Tasks;
 
 namespace Hsc.ApiFramework.Authentication.DependencyInjection
 {
+    /// <summary>
+    /// extension methods for UseHscAuthentication
+    /// </summary>
     public static class ServiceCollectionExtensions
     {
 
@@ -33,14 +37,25 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
         /// <param name="app"></param>
         /// <param name="useAuthentication">if true, default ASP.NET Core app.UseAuthentication() will be executed, only set to false if this is already executed in another method</param>
         /// <param name="useAuthorization">if true, default ASP.NET Core app.UseAuthorization() will be executed, only set to false if this is already executed in another method</param>
+        /// <param name="automaticMigration">if true, will perform a database migration on startup if one is available</param>
         /// <returns></returns>     
-        public static IApplicationBuilder UseHscAuthentication(this IApplicationBuilder app, bool useAuthentication = true, bool useAuthorization = true)
+        public static IApplicationBuilder UseHscAuthentication(this IApplicationBuilder app, bool automaticMigration = true,  bool useAuthentication = true, bool useAuthorization = true)
         {
             if (useAuthentication)
                 app.UseAuthentication();
 
             if (useAuthorization)
                 app.UseAuthorization();
+
+            if (automaticMigration)
+            {
+                using (var scope = app.ApplicationServices.CreateScope())
+                {
+                    Task.Delay(10000);
+                    var dbContext = scope.ServiceProvider.GetService<HscDatabaseContext>();
+                    dbContext?.Database.Migrate();
+                }
+            }
 
             return app;
         }
@@ -69,6 +84,7 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
             services.ConfigureIdentityServices<TIdentityDbContext, TUser, TRole>();
 
             services = ConfigureHscAuthenticationServices(services);
+
             return services;
         }
 
@@ -158,7 +174,7 @@ namespace Hsc.ApiFramework.Authentication.DependencyInjection
                     ValidateLifetime = true,
                     ValidAudience = HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_AUDIENCE),
                     ValidIssuer = HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET)))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET)!))
                 };
             });
             return services;

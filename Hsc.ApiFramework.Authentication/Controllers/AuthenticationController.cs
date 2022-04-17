@@ -19,6 +19,9 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Hsc.ApiFramework.Core.Controllers
 {
+    /// <summary>
+    /// Controller to handle authentication
+    /// </summary>
     [Route("[controller]")]
     [ApiController]
     public class AuthenticationController : ControllerBase
@@ -27,6 +30,11 @@ namespace Hsc.ApiFramework.Core.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
 
+        /// <summary>
+        /// Controller to handle authentication
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="roleManager"></param>
         public AuthenticationController(
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager)
@@ -35,6 +43,11 @@ namespace Hsc.ApiFramework.Core.Controllers
             _roleManager = roleManager;
         }
 
+        /// <summary>
+        /// Endpoint to get login JWT token
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
@@ -66,6 +79,11 @@ namespace Hsc.ApiFramework.Core.Controllers
             return Unauthorized();
         }
 
+        /// <summary>
+        /// Endpoint to register a new user
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
@@ -84,9 +102,16 @@ namespace Hsc.ApiFramework.Core.Controllers
             if (!result.Succeeded)
                 return StatusCode(StatusCodes.Status500InternalServerError, new RequestResponse { Status = "Error", Message = result.Errors.FirstOrDefault()?.Description });
 
+            await _userManager.AddToRoleAsync(user, HscUserRoles.User.ToString());
+
             return Ok(user);
         }
 
+        /// <summary>
+        /// Register admin user
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("register-admin")]
         public async Task<IActionResult> RegisterAdmin([FromBody] RegisterModel model)
@@ -105,20 +130,16 @@ namespace Hsc.ApiFramework.Core.Controllers
             if (!result.Succeeded)
                 return StatusCode(StatusCodes.Status500InternalServerError, new RequestResponse { Status = "Error", Message = result.Errors.FirstOrDefault()?.Description });
 
-            foreach (var role in Enum.GetValues<UserRoles>())
-            {
-                if (!await _roleManager.RoleExistsAsync(role.ToString()))
-                    await _roleManager.CreateAsync(new IdentityRole(role.ToString()));
-
-                await _userManager.AddToRoleAsync(user, role.ToString());
-            }
+            await _userManager.AddToRoleAsync(user, HscUserRoles.Admin.ToString());
+            await _userManager.AddToRoleAsync(user, HscUserRoles.Moderator.ToString());
+            await _userManager.AddToRoleAsync(user, HscUserRoles.User.ToString());
 
             return Ok(user);
         }
 
         private JwtSecurityToken GetToken(List<Claim> authClaims)
         {
-            var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET)));
+            var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_SECRET)!));
 
             var token = new JwtSecurityToken(
                 issuer: HscEnvironmentConfiguration.GetSetting(HscSetting.HSC_AUTH_JWT_ISSUER),
